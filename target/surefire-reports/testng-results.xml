@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-11-19T21:10:52 IST" name="Suite" finished-at="2026-11-19T21:11:16 IST" duration-ms="23335">
+    <groups>
+      <group name="smoke">
+        <method signature="Logintest.loginSuccessverification()[pri:0, instance:Practiceframework.test.Logintest@7d900ecf]" name="loginSuccessverification" class="Practiceframework.test.Logintest"/>
+        <method signature="Producttest.addsingleProducttoCarttest()[pri:0, instance:Practiceframework.test.Producttest@3e0e1046]" name="addsingleProducttoCarttest" class="Practiceframework.test.Producttest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-11-19T21:10:52 IST" name="Product Test Set" finished-at="2026-11-19T21:11:14 IST" duration-ms="22055">
+      <class name="Practiceframework.test.Producttest">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:Practiceframework.test.Producttest@3e0e1046]" started-at="2026-11-19T21:10:52 IST" name="launchApp" finished-at="2026-11-19T21:10:57 IST" duration-ms="4994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="addsingleProducttoCarttest()[pri:0, instance:Practiceframework.test.Producttest@3e0e1046]" started-at="2026-11-19T21:10:57 IST" name="addsingleProducttoCarttest" finished-at="2026-11-19T21:11:01 IST" duration-ms="4019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addsingleProducttoCarttest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Practiceframework.test.Producttest@3e0e1046]" started-at="2026-11-19T21:11:01 IST" name="tearDown" finished-at="2026-11-19T21:11:02 IST" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:Practiceframework.test.Producttest@3e0e1046]" started-at="2026-11-19T21:11:02 IST" name="launchApp" finished-at="2026-11-19T21:11:05 IST" duration-ms="3131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="addmultipleProducttoCarttest()[pri:0, instance:Practiceframework.test.Producttest@3e0e1046]" started-at="2026-11-19T21:11:05 IST" name="addmultipleProducttoCarttest" finished-at="2026-11-19T21:11:13 IST" depends-on-methods="Practiceframework.test.Producttest.addsingleProducttoCarttest" duration-ms="8361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addmultipleProducttoCarttest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Practiceframework.test.Producttest@3e0e1046]" started-at="2026-11-19T21:11:13 IST" name="tearDown" finished-at="2026-11-19T21:11:14 IST" duration-ms="1064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Practiceframework.test.Producttest -->
+    </test> <!-- Product Test Set -->
+    <test started-at="2026-11-19T21:10:52 IST" name="Login Test Set" finished-at="2026-11-19T21:11:16 IST" duration-ms="23335">
+      <class name="Practiceframework.test.Logintest">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:Practiceframework.test.Logintest@7d900ecf]" started-at="2026-11-19T21:10:52 IST" name="launchApp" finished-at="2026-11-19T21:10:57 IST" duration-ms="4579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="blankpasswordloginverification()[pri:0, instance:Practiceframework.test.Logintest@7d900ecf]" started-at="2026-11-19T21:10:57 IST" name="blankpasswordloginverification" finished-at="2026-11-19T21:10:57 IST" duration-ms="550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankpasswordloginverification -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Practiceframework.test.Logintest@7d900ecf]" started-at="2026-11-19T21:10:57 IST" name="tearDown" finished-at="2026-11-19T21:10:58 IST" duration-ms="565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:Practiceframework.test.Logintest@7d900ecf]" started-at="2026-11-19T21:10:58 IST" name="launchApp" finished-at="2026-11-19T21:11:01 IST" duration-ms="3159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="blankpasswordloginverificationfailtestcase()[pri:0, instance:Practiceframework.test.Logintest@7d900ecf]" started-at="2026-11-19T21:11:01 IST" name="blankpasswordloginverificationfailtestcase" finished-at="2026-11-19T21:11:01 IST" duration-ms="346" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at Practiceframework.test.Logintest.blankpasswordloginverificationfailtestcase(Logintest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankpasswordloginverificationfailtestcase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Practiceframework.test.Logintest@7d900ecf]" started-at="2026-11-19T21:11:02 IST" name="tearDown" finished-at="2026-11-19T21:11:03 IST" duration-ms="945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:Practiceframework.test.Logintest@7d900ecf]" started-at="2026-11-19T21:11:03 IST" name="launchApp" finished-at="2026-11-19T21:11:07 IST" duration-ms="4103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="blankusernameloginverification()[pri:0, instance:Practiceframework.test.Logintest@7d900ecf]" started-at="2026-11-19T21:11:07 IST" name="blankusernameloginverification" finished-at="2026-11-19T21:11:08 IST" duration-ms="1095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankusernameloginverification -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Practiceframework.test.Logintest@7d900ecf]" started-at="2026-11-19T21:11:08 IST" name="tearDown" finished-at="2026-11-19T21:11:09 IST" duration-ms="1131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:Practiceframework.test.Logintest@7d900ecf]" started-at="2026-11-19T21:11:09 IST" name="launchApp" finished-at="2026-11-19T21:11:13 IST" duration-ms="4068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="loginSuccessverification()[pri:0, instance:Practiceframework.test.Logintest@7d900ecf]" started-at="2026-11-19T21:11:13 IST" name="loginSuccessverification" finished-at="2026-11-19T21:11:15 IST" duration-ms="1378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccessverification -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Practiceframework.test.Logintest@7d900ecf]" started-at="2026-11-19T21:11:15 IST" name="tearDown" finished-at="2026-11-19T21:11:16 IST" duration-ms="828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Practiceframework.test.Logintest -->
+    </test> <!-- Login Test Set -->
+  </suite> <!-- Suite -->
+</testng-results>

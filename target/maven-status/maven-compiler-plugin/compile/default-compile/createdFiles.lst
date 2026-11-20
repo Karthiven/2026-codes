@@ -1,0 +1,4 @@
+Practiceframework\pageobjects\Loginpage.class
+Practiceframework\pageobjects\Productspage.class
+Practiceframework\utility\Utility.class
+karthiks\resources\ExtentReporter.class
